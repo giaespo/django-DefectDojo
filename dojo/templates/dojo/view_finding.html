@@ -165,7 +165,7 @@
                             </span>
                             [<a title="Review Finding for Closure" class="text-primary"
                                 style="display: inline !important;"
-                                href="{% url 'defect_finding_review' finding.id %}">Review Finding for Closure</a>]
+                                href="{% url 'defect_finding_review' finding.id %}">Review Finding for Closur{% trans "e"%}</a>]
                         </th>
                     </tr>
                 {% endif %}
@@ -175,18 +175,18 @@
                     <th>SLA</th>
                     {% endif %}
                     {% if finding.scanner_confidence %}
-                    <th>Scanner Confidence</th>
+                    <th>Scanner Confidenc{% trans "e"%}</th>
                     {% endif %}
                     <th>Status</th>
                     {% if finding.risk_acceptance_set.all %}
-                        <th>Acceptance</th>
+                        <th>Acceptanc{% trans "e"%}</th>
                     {% endif %}
                     {% if finding.duplicate_finding_set %}
                     <th>Parent</th>
                     {% endif %}
-                    <th>Type</th>
+                    <th>Typ{% trans "e"%}</th>
                     <th>Date discovered</th>
-                    <th>Age</th>
+                    <th>Ag{% trans "e"%}</th>
                     <th>Reporter</th>
                     {% if finding.mitigated %}
                         <th>Date Mitigated</th>
@@ -241,7 +241,7 @@
                     {% if finding.risk_acceptance_set.all %}
                         <td>
                             <a href="{% url 'view_risk' finding.test.engagement.id finding.risk_acceptance_set.all.0.id %}">
-                                View Risk Acceptance</a>
+                                View Risk Acceptanc{% trans "e"%}</a>
                         </td>
                     {% endif %}
                     <td>
@@ -561,9 +561,9 @@
                             <table class="tablesorter-bootstrap table table-condensed table-striped table-hover">
                                 <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Username</th>
-                                    <th>Role</th>
+                                    <th>Nam{% trans "e"%}</th>
+                                    <th>Usernam{% trans "e"%}</th>
+                                    <th>Rol{% trans "e"%}</th>
                                     <th>Environment</th>
                                     <th>Authentication Provider</th>
                                     <th>Login Valid</th>
@@ -598,7 +598,7 @@
                                                     <a class="btn btn-sm btn-primary"
                                                        href="{% url 'view_cred_finding' cred.finding.id cred.id %}">View</a>
                                                     <a class="btn btn-sm btn-danger delete"
-                                                       href="{% url 'delete_cred_finding' cred.finding.id cred.id %}">Delete</a>
+                                                       href="{% url 'delete_cred_finding' cred.finding.id cred.id %}">Delet{% trans "e"%}</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -654,7 +654,7 @@
     {% include "dojo/snippets/comments.html" with notes=notes object=finding destination="finding" %}
 
     <div class="protip">
-       <i class="fa fa-lightbulb-o"></i> <strong>ProTip!</strong> Type <kbd>e</kbd> to edit any finding.
+       <i class="fa fa-lightbulb-o"></i> <strong>ProTip!</strong> Type <kbd>{% trans "e"%}</kbd> to edit any finding.
     </div>
 {% endblock %}
 {% block postscript %}

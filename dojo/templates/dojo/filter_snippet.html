@@ -25,9 +25,9 @@
                 </button>
                 &nbsp;
                 {% if clear_link %}
-                    <a href="{{ clear_link }}" class="clear centered"> [Clear Filters] </a>
+                    <a href="{{ clear_link }}" class="clear centered">{% trans " [Clear Filters] "%}</a>
                 {% else %}
-                    <a href="{{ request.path }}" class="clear centered"> [Clear Filters] </a>
+                    <a href="{{ request.path }}" class="clear centered">{% trans " [Clear Filters] "%}</a>
                 {% endif %}
             </div>
         {% endif %}

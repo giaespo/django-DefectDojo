@@ -5,7 +5,7 @@
     {% if check.session_management == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.session_management == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.session_issues.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>
@@ -20,7 +20,7 @@
     {% if check.encryption_crypto == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.encryption_crypto == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.crypto_issues.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>
@@ -34,7 +34,7 @@
     {% if check.configuration_management == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.configuration_management == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.config_issues.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>
@@ -48,7 +48,7 @@
     {% if check.authentication == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.authenttication == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.auth_issuses.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>
@@ -62,7 +62,7 @@
     {% if check.authorization_and_access_control == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.authorization_and_access_contorl == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.author_issues.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>
@@ -76,7 +76,7 @@
     {% if check.data_input_sanitization_validation == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.data_input_sanitization_validation == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.data_issues.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>
@@ -90,7 +90,7 @@
     {% if check.sensitive_data == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.sensitive_data == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.sensitive_issues.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>
@@ -104,7 +104,7 @@
     {% if check.other_issues == 'Pass' %}
         <span class="text-success"> Pass </span>
     {% elif check.other_issues == 'Fail' %}
-        <span class="text-error"> Fail </span>
+        <span class="text-error">{% trans " Fail "%}</span>
         <div>
             {% for issue in check.other_issues.all %}
                 <a href="{% url 'view_finding' issue.id %}">{{ issue.title }} </a>

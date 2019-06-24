@@ -43,7 +43,7 @@
                     {% include "dojo/paging_snippet.html" with page=history %}
                 </div>
             {% else %}
-                <p class="text-center">No update history found for this object </p>
+                <p class="text-center">{% trans "No update history found for this object "%}</p>
             {% endif %}
         </div>
     </div>

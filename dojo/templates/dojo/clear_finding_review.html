@@ -12,7 +12,7 @@
 {% block content %}
     <h3> Clear Finding Review</h3>
     <h4>{{ finding.title }}</h4>
-    <p>Set the appropriate status for this finding.  Please add notes to help document.</p>
+    <p>{% trans "Set the appropriate status for this finding.  Please add notes to help document."%}</p>
     <form class="form-horizontal" action="{% url 'clear_finding_review' finding.id %}" method="post">
         {% csrf_token %}
         {% include "dojo/form_fields.html" with form=form %}

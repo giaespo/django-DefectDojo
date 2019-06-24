@@ -5,9 +5,9 @@
 {% endblock %}
 {% block content %}
     <h3> Edit {{ product.name }} Metadata</h3>
-    <p>
+    <p>{% trans "
         Use the form below to edit the values in each of the metadata fields.  To remove a field, leave the value blank.
-    </p>
+    "%}</p>
     <br/>
     <form class="form-horizontal" method="post">{% csrf_token %}
         {% for cf in product.product_meta.all %}

@@ -25,7 +25,7 @@
     {% endif %}
     <title>{{ report_name }}</title>
     <link href="{{ host }}{% static "bootswatch-dist/css/bootstrap.css" %}" rel="stylesheet">
-    <style type="text/css">
+    <style type="text/css">{% trans "
         @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 
         .label {
@@ -185,7 +185,7 @@
         .panel-warning .panel-heading h4{
             color: #fff;
         }
-    </style>
+    "%}</style>
 </head>
 <body>
 {% block content %}

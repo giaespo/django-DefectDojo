@@ -3,7 +3,7 @@
 <head>
 </head>
 {% block content %}
-    <h3> Testing CheckList</h3>
+    <h3>{% trans " Testing CheckList"%}</h3>
     <form class="form-horizontal" action="{% url 'complete_checklist' eid %}" method="post">{% csrf_token %}
         {% include "dojo/form_fields.html" with form=form %}
         <div class="form-group">

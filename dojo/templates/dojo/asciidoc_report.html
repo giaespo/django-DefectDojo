@@ -277,7 +277,7 @@
             <br>
         {% endif %}
         {% if include_finding_notes %}
-            <p><b>==== Finding Notes: ====</b>
+            <p><b>{% trans "==== Finding Notes: ===="%}</b>
                 <br>
                 {% if find.notes.all %}
                     {% for note in find.notes.all %}
@@ -328,7 +328,7 @@
             {% endif %}
             {% if include_finding_notes %}
                 <br>
-                <p><b>==== Finding Notes: ====</b>
+                <p><b>{% trans "==== Finding Notes: ===="%}</b>
                     <br>
                     {% if find.notes.all %}
                         {% for note in find.notes.all %}
@@ -414,7 +414,7 @@
                 {% endif %}
                 <br>
                 {% if include_finding_notes %}
-                    <p><b>==== Finding Notes: ====</b>
+                    <p><b>{% trans "==== Finding Notes: ===="%}</b>
                         <br>
                         {% if find.notes.all %}
                             {% for note in find.notes.all %}

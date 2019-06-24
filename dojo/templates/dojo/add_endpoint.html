@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-    <h3> Add Endpoint</h3>
+    <h3>{% trans " Add Endpoint"%}</h3>
     <form class="form-horizontal" method="post">{% csrf_token %}
         {% include "dojo/form_fields.html" with form=form %}
         <div class="form-group">

@@ -22,7 +22,7 @@
     <meta name="pdfkit-quiet" content=""/>
     <title>{{ report_name }}</title>
     <link href="{{ host }}{% static "bootswatch-dist/css/bootstrap.css" %}" rel="stylesheet">
-    <style type="text/css">
+    <style type="text/css">{% trans "
         @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 
         .container {
@@ -181,7 +181,7 @@
             font-weight: 900 !important;
             color: black;
         }
-    </style>
+    "%}</style>
 </head>
 <body>
 {% for widget in widgets %}

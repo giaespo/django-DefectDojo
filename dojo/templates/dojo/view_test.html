@@ -257,7 +257,7 @@
                     <th>Reporter</th>
                     <th>Status</th>
                     {% if "enable_jira"|get_system_setting %}
-                    <th>Jira</th>
+                    <th>Jir{% trans "a"%}</th>
                     {% endif %}
                 </tr>
                 </thead>
@@ -597,7 +597,7 @@
 {% include "dojo/snippets/comments.html" with notes=notes object=test destination="test" %}
 
 <div class="protip">
-    <i class="fa fa-lightbulb-o"></i> <strong>ProTip!</strong> Type <kbd>e</kbd> to edit this test. Type <kbd>a</kbd> to add a finding to this test.
+    <i class="fa fa-lightbulb-o"></i> <strong>ProTip!</strong> Type <kbd>e</kbd> to edit this test. Type <kbd>{% trans "a"%}</kbd> to add a finding to this test.
 </div>
 {% endblock %}
 {% block postscript %}

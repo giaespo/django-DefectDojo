@@ -143,7 +143,7 @@
                     {% include "dojo/paging_snippet.html" with page=templates page_size=True %}
                 </div>
             {% else %}
-                <p class="text-center">No finding templates found.</p>
+                <p class="text-center">{% trans "No finding templates found."%}</p>
             {% endif %}
         </div>
     </div>

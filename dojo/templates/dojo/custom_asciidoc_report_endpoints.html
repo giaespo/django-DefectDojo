@@ -72,7 +72,7 @@
             {% endif %}
             <br>
             {% if include_finding_notes %}
-                <p><b>==== Finding Notes: ====</b>
+                <p><b>{% trans "==== Finding Notes: ===="%}</b>
                     <br>
                     {% if find.notes.all %}
                         {% for note in find.notes.all %}

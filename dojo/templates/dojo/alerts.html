@@ -43,7 +43,7 @@
                 {% include "dojo/paging_snippet.html" with page=alerts page_size=False%}
             </div>
             {% else %}
-                <p class="text-center">No alerts found.</p>
+                <p class="text-center">{% trans "No alerts found."%}</p>
             {% endif %}
         </div>
     </div>

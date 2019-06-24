@@ -71,7 +71,7 @@
                     {% include "dojo/paging_snippet.html" with page=findings page_size=True %}
                 </div>
             {% else %}
-                <p class="text-center">No findings found for this product.</p>
+                <p class="text-center">{% trans "No findings found for this product."%}</p>
             {% endif %}
         </div>
     </div>

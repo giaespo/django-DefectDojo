@@ -244,7 +244,7 @@
                     {% include "dojo/paging_snippet.html" with page=prod_list page_size=True %}
                 </div>
             {% else %}
-                <p class="text-center">No products found.</p>
+                <p class="text-center">{% trans "No products found."%}</p>
             {% endif %}
         </div>
     </div>

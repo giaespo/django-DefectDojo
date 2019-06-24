@@ -31,7 +31,7 @@
                 {% for field in form.visible_fields %}
                     {% if field.auto_id %}
                         <tr>
-                            <td>{{ field.label }}{% if field.field.required%}<sup>*</sup>{% endif %}
+                            <td>{{ field.label }}{% if field.field.required%}<sup>{% trans "*"%}</sup>{% endif %}
                             </td>
                     {% endif %}
                     {% for pk,c in field.field.widget.choices %}

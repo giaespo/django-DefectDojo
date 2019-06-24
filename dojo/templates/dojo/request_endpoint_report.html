@@ -70,7 +70,7 @@
                     {% include "dojo/paging_snippet.html" with page=paged_endpoints %}
                 </div>
             {% else %}
-                <p class="text-center"> No endpoints found.</p>
+                <p class="text-center">{% trans " No endpoints found."%}</p>
             {% endif %}
         </div>
     </div>

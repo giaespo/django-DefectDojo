@@ -213,11 +213,11 @@
         <div class="panel panel-danger">
             <div class="panel-heading text-center"><h3>Danger Zone</h3></div>
             <div class="panel-body text-center">
-                <p>
+                <p>{% trans "
                     Deleting this Risk Acceptance will remove the uploaded file, delete associated Notes and make
                     related
                     findings active.
-                </p>
+                "%}</p>
 
                 <form class="form-horizontal" action="{% url 'delete_risk' eng.id risk_approval.id %}" method="post">
                     {% csrf_token %}

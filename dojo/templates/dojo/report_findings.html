@@ -33,7 +33,7 @@
                         <th class="nowrap">{% dojo_sort request 'Name' 'title' %}</th>
                         <th class="nowrap">{% dojo_sort request 'Date' 'date' %}</th>
                         <th class="nowrap">{% dojo_sort request 'Severity' 'numerical_severity' 'asc' %}</th>
-                        <th class="nowrap">Status</th>
+                        <th class="nowrap">{% trans "Status"%}</th>
                         <th class="nowrap">{% dojo_sort request 'Product' 'test__engagement__product__name' %}</th>
                     </tr>
                     </thead>

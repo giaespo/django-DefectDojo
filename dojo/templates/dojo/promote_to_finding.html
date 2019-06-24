@@ -13,9 +13,9 @@
     <div>
         <h3>Promote Potential Finding</h3>
     </div>
-    <div class="alert alert-info" role="alert">
+    <div class="alert alert-info" role="alert">{% trans "
         In order to promote a Potential Finding to a Verified Finding you must provide the following information.
-    </div>
+    "%}</div>
 
     <form id="add_finding" class="form-horizontal" action="{% url 'promote_to_finding' stub_finding.id %}"
           method="post">

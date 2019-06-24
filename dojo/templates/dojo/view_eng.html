@@ -413,7 +413,7 @@
                             <th>Authentication</th>
                             <th>Authorization</th>
                             <th>Data Input</th>
-                            <th>Sensitive Data</th>
+                            <th>Sensitive Dat{% trans "a"%}</th>
                             <th>Other</th>
                         </tr>
                         </thead>
@@ -557,7 +557,7 @@
           </tr>
           {% if jissue and jconf %}
           <tr>
-            <td><strong>Jira</strong></td>
+            <td><strong>Jir{% trans "a"%}</strong></td>
             <td><a href="{{ jconf.url }}/browse/{{ jissue.jira_key }}" target="_blank"><i class="fa fa-external-link"></i> Jira Epic</a></td>
           </tr>
           {% endif %}
@@ -728,7 +728,7 @@
 </div>
 </div>
 <div class="protip">
-   <i class="fa fa-lightbulb-o"></i> <strong>ProTip!</strong> Type <kbd>e</kbd> to edit this engagement. Type <kbd>i</kbd> to import scan results or <kbd>a</kbd> to add tests.
+   <i class="fa fa-lightbulb-o"></i> <strong>ProTip!</strong> Type <kbd>e</kbd> to edit this engagement. Type <kbd>i</kbd> to import scan results or <kbd>{% trans "a"%}</kbd> to add tests.
 </div>
 {% endblock %}
 {% block postscript %}

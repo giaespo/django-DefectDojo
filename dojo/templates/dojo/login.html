@@ -43,9 +43,9 @@
                 <div class="col-sm-offset-1 col-sm-1">
                     <button class="btn btn-success" type="button">
                         {% if OKTA_ENABLED == True %}
-                            <a href="{% url 'social:begin' 'okta-oauth2' %}?next={{ request.GET.next }}" style="color: rgb(255,255,255)">Login with OKTA</a>
+                            <a href="{% url 'social:begin' 'okta-oauth2' %}?next={{ request.GET.next }}" style="color: rgb(255,255,255)">{% trans "Login with OKTA"%}</a>
                         {% else %}
-                            <a href="https://defectdojo.readthedocs.io/en/latest/social-authentication.html#okta" style="color: rgb(255,255,255)">Login with OKTA</a>
+                            <a href="https://defectdojo.readthedocs.io/en/latest/social-authentication.html#okta" style="color: rgb(255,255,255)">{% trans "Login with OKTA"%}</a>
                         {% endif %}
                     </button>
                 </div>

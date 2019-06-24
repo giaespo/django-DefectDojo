@@ -109,7 +109,7 @@
                     {% include "dojo/paging_snippet.html" with page=reports page_size=True %}
                 </div>
             {% else %}
-                <p class="text-center">No Reports found.</p>
+                <p class="text-center">{% trans "No Reports found."%}</p>
             {% endif %}
         </div>
     </div>

@@ -57,7 +57,7 @@
                            <a class="btn btn-sm btn-warning"
                               href="{% url 'edit_object' object.product.id object.id %}">Edit</a>
                            <a class="btn btn-sm btn-danger"
-                              href="{% url 'delete_object' object.product.id object.id %}">Delete</a>
+                              href="{% url 'delete_object' object.product.id object.id %}">{% trans "Delete"%}</a>
                        </div>
                    </td>
                 </tr>
@@ -169,7 +169,7 @@
                         var severity = $("<td> </td>");
                         var reporter = $("<td>{{ request.user.username }}</td>");
                         var date = $("<td>None</td>");
-                        var actions = $('<td><div class="btn-group"><a class="btn btn-sm btn-warning" href="/stub_finding/[id]/promote">Promote To Finding</a> <a class="btn btn-sm btn-danger" href="/stub_finding/[id]/delete">Delete</a></div></td>'.replace(/\[id\]/g, fid));
+                        var actions = $('<td><div class="btn-group"><a class="btn btn-sm btn-warning" href="/stub_finding/[id]/promote">Promote To Finding</a> <a class="btn btn-sm btn-danger" href="/stub_finding/[id]/delete">{% trans "Delete"%}</a></div></td>'.replace(/\[id\]/g, fid));
 
                         row.append(title, severity, reporter, date, actions).appendTo("#stub_findings tbody");
                         $("input#quick_add_finding").val("")

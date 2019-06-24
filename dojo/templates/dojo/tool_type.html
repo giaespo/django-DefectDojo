@@ -58,7 +58,7 @@
                     {% include "dojo/paging_snippet.html" with page=confs page_size=True %}
                 </div>
             {% else %}
-                <p class="text-center">No tool type configurations found.</p>
+                <p class="text-center">{% trans "No tool type configurations found."%}</p>
             {% endif %}
         </div>
     </div>

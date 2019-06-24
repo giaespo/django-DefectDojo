@@ -29,7 +29,7 @@
                 <input class="btn btn-primary" type="submit" name="add_user" value="{{ name }}"/>
                 &nbsp;&nbsp;
                 {% if to_edit and to_edit.id != user.id %}
-                    <a class="btn btn-danger" href="{% url 'delete_user' to_edit.id %}">Delete User</a>
+                    <a class="btn btn-danger" href="{% url 'delete_user' to_edit.id %}">{% trans "Delete User"%}</a>
                 {% endif %}
             </div>
         </div>

@@ -84,7 +84,7 @@
                     {% include "dojo/paging_snippet.html" with page=rules page_size=True %}
                 </div>
             {% else %}
-                <p class="text-center">No rules found.</p>
+                <p class="text-center">{% trans "No rules found."%}</p>
             {% endif %}
         </div>
     </div>

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h3> Delete Credential Mapping</h3>
+    <h3> {% trans "Delete Credential Mapping"%}</h3>
 
     <div class="danger-zone panel panel-danger">
         <div class="panel-heading">
@@ -11,7 +11,7 @@
             {{ form }}
             <br/>
             <div class="form-group">
-                <button class="btn btn-danger" type="submit" name="delete_tool_product" value="delete_tool_product">Delete Credential Mapping</button>
+                <button class="btn btn-danger" type="submit" name="delete_tool_product" value="delete_tool_product">{% trans "Delete Credential Mapping"%}</button>
             </div>
         </form>
     </div>
